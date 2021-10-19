@@ -6,7 +6,8 @@
 {{/banner}}
 
 <div class="container list">
-    {{#list}}
+    
+     {{#list}}
     <div class="item">
         <img src="images/{{image}}" class="item--image" />
         <div class="item--name">{{name}}</div>
@@ -14,11 +15,7 @@
         <div class="item--genre">Gênero: {{sex}}</div>
     </div>
     {{/list}}
+      
 </div>
-{{^list}}
-<div class="container no-list">
-    <h2>Not found.</h2>
-</div>
-{{/list}}
 
 {{>partials/footer}}
